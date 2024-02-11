@@ -154,7 +154,6 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -201,36 +200,16 @@ declare module 'vue' {
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
-    readonly useAuctionNumbersStore: UnwrapRef<typeof import('./stores/modules/auction/numbers')['useAuctionNumbersStore']>
-    readonly useAuctionNumbersStoreWithOut: UnwrapRef<typeof import('./stores/modules/auction/numbers')['useAuctionNumbersStoreWithOut']>
-    readonly useAuctionStore: UnwrapRef<typeof import('./stores/modules/auction/auction')['useAuctionStore']>
-    readonly useAuctionStoreWithOut: UnwrapRef<typeof import('./stores/modules/auction/auction')['useAuctionStoreWithOut']>
-    readonly useBannersStore: UnwrapRef<typeof import('./stores/modules/marketing/banners')['useBannersStore']>
-    readonly useBannersStoreWithOut: UnwrapRef<typeof import('./stores/modules/marketing/banners')['useBannersStoreWithOut']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly useManualUsersStore: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStore']>
     readonly useManualUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStoreWithOut']>
-    readonly useMgmReportsStore: UnwrapRef<typeof import('./stores/modules/reports/mgm')['useMgmReportsStore']>
-    readonly useMgmReportsStoreWithout: UnwrapRef<typeof import('./stores/modules/reports/mgm')['useMgmReportsStoreWithout']>
     readonly useMyIdUsersStore: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStore']>
     readonly useMyIdUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStoreWithOut']>
-    readonly useNotificationsStore: UnwrapRef<typeof import('./stores/modules/notifications/index')['useNotificationsStore']>
-    readonly useNotificationsStoreWithOut: UnwrapRef<typeof import('./stores/modules/notifications/index')['useNotificationsStoreWithOut']>
-    readonly useNumbersStore: UnwrapRef<typeof import('./stores/modules/numbers/emptyNumbers')['useNumbersStore']>
-    readonly useNumbersStoreWithOut: UnwrapRef<typeof import('./stores/modules/numbers/emptyNumbers')['useNumbersStoreWithOut']>
-    readonly usePromoCodesStore: UnwrapRef<typeof import('./stores/modules/marketing/promoCodes')['usePromoCodesStore']>
-    readonly usePromoCodesStoreWithOut: UnwrapRef<typeof import('./stores/modules/marketing/promoCodes')['usePromoCodesStoreWithOut']>
-    readonly useRolesStore: UnwrapRef<typeof import('./stores/modules/roles/index')['useRolesStore']>
-    readonly useRolesStoreWithOut: UnwrapRef<typeof import('./stores/modules/roles/index')['useRolesStoreWithOut']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
-    readonly useStaffsStore: UnwrapRef<typeof import('./stores/modules/staffs/index')['useStaffsStore']>
-    readonly useStaffsStoreWithOut: UnwrapRef<typeof import('./stores/modules/staffs/index')['useStaffsStoreWithOut']>
-    readonly useSubscriberReportsStore: UnwrapRef<typeof import('./stores/modules/reports/subscribers')['useSubscriberReportsStore']>
-    readonly useSubscriberReportsStoreWithout: UnwrapRef<typeof import('./stores/modules/reports/subscribers')['useSubscriberReportsStoreWithout']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>
@@ -241,7 +220,6 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -288,36 +266,16 @@ declare module '@vue/runtime-core' {
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
-    readonly useAuctionNumbersStore: UnwrapRef<typeof import('./stores/modules/auction/numbers')['useAuctionNumbersStore']>
-    readonly useAuctionNumbersStoreWithOut: UnwrapRef<typeof import('./stores/modules/auction/numbers')['useAuctionNumbersStoreWithOut']>
-    readonly useAuctionStore: UnwrapRef<typeof import('./stores/modules/auction/auction')['useAuctionStore']>
-    readonly useAuctionStoreWithOut: UnwrapRef<typeof import('./stores/modules/auction/auction')['useAuctionStoreWithOut']>
-    readonly useBannersStore: UnwrapRef<typeof import('./stores/modules/marketing/banners')['useBannersStore']>
-    readonly useBannersStoreWithOut: UnwrapRef<typeof import('./stores/modules/marketing/banners')['useBannersStoreWithOut']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly useManualUsersStore: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStore']>
     readonly useManualUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStoreWithOut']>
-    readonly useMgmReportsStore: UnwrapRef<typeof import('./stores/modules/reports/mgm')['useMgmReportsStore']>
-    readonly useMgmReportsStoreWithout: UnwrapRef<typeof import('./stores/modules/reports/mgm')['useMgmReportsStoreWithout']>
     readonly useMyIdUsersStore: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStore']>
     readonly useMyIdUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStoreWithOut']>
-    readonly useNotificationsStore: UnwrapRef<typeof import('./stores/modules/notifications/index')['useNotificationsStore']>
-    readonly useNotificationsStoreWithOut: UnwrapRef<typeof import('./stores/modules/notifications/index')['useNotificationsStoreWithOut']>
-    readonly useNumbersStore: UnwrapRef<typeof import('./stores/modules/numbers/emptyNumbers')['useNumbersStore']>
-    readonly useNumbersStoreWithOut: UnwrapRef<typeof import('./stores/modules/numbers/emptyNumbers')['useNumbersStoreWithOut']>
-    readonly usePromoCodesStore: UnwrapRef<typeof import('./stores/modules/marketing/promoCodes')['usePromoCodesStore']>
-    readonly usePromoCodesStoreWithOut: UnwrapRef<typeof import('./stores/modules/marketing/promoCodes')['usePromoCodesStoreWithOut']>
-    readonly useRolesStore: UnwrapRef<typeof import('./stores/modules/roles/index')['useRolesStore']>
-    readonly useRolesStoreWithOut: UnwrapRef<typeof import('./stores/modules/roles/index')['useRolesStoreWithOut']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
-    readonly useStaffsStore: UnwrapRef<typeof import('./stores/modules/staffs/index')['useStaffsStore']>
-    readonly useStaffsStoreWithOut: UnwrapRef<typeof import('./stores/modules/staffs/index')['useStaffsStoreWithOut']>
-    readonly useSubscriberReportsStore: UnwrapRef<typeof import('./stores/modules/reports/subscribers')['useSubscriberReportsStore']>
-    readonly useSubscriberReportsStoreWithout: UnwrapRef<typeof import('./stores/modules/reports/subscribers')['useSubscriberReportsStoreWithout']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>

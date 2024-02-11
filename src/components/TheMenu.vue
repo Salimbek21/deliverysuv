@@ -31,6 +31,72 @@ function toggleDropdown(event: any) {
         <span>Дэшборд</span>
       </RouterLink>
     </li>
+    <li class="menuItem">
+      <RouterLink
+        class="menuLink"
+        :class="router.currentRoute.value.path == '/customers' ? 'active' : null"
+        to="/customers"
+        w-full
+        flex
+        items-center
+      >
+        <i class="menuIcon iconReports"></i>
+        <span>Мижозлар</span>
+      </RouterLink>
+    </li>
+    <li class="menuItem">
+      <RouterLink
+        class="menuLink"
+        :class="router.currentRoute.value.path == '/products' ? 'active' : null"
+        to="/"
+        w-full
+        flex
+        items-center
+      >
+        <i class="menuIcon iconStaffs"></i>
+        <span>Махсулотлар</span>
+      </RouterLink>
+    </li>
+    <li class="menuItem">
+      <RouterLink
+        class="menuLink"
+        :class="router.currentRoute.value.path == '/orders' ? 'active' : null"
+        to="/"
+        w-full
+        flex
+        items-center
+      >
+        <i class="menuIcon iconDashboard"></i>
+        <span>Буюртмалар</span>
+      </RouterLink>
+    </li>
+    <li class="menuItem">
+      <RouterLink
+        class="menuLink"
+        :class="router.currentRoute.value.path == '/managers' ? 'active' : null"
+        to="/"
+        w-full
+        flex
+        items-center
+      >
+        <i class="menuIcon iconDashboard"></i>
+        <span>Менежерлар</span>
+      </RouterLink>
+    </li>
+    <li class="menuItem">
+      <RouterLink
+        class="menuLink"
+        :class="router.currentRoute.value.path == '/damaged' ? 'active' : null"
+        to="/"
+        w-full
+        flex
+        items-center
+      >
+        <i class="menuIcon iconDashboard"></i>
+        <span>Шикастланган</span>
+      </RouterLink>
+    </li>
+    
     <div v-for="(item, index) in menu" :key="index">
       <ul
         class="subMenu"
