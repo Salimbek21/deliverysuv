@@ -73,7 +73,7 @@ function logOut() {
 .sideBarLogo .logo {
   width: 170px;
   height: 36px;
-  background-image: url('/src/assets/logoText.svg');
+  background: url('/src/assets/logoText.svg') no-repeat center / contain;
 }
 
 .toggleSidebar {

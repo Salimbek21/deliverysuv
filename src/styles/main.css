@@ -2,10 +2,10 @@
 
 :root {
   /* Primary */
-  --el-color-primary: #000000 !important;
-  --el-color-primary-light-3: #333333 !important;
-  --el-color-primary-light-5: #555555 !important;
-  --el-color-primary-light-8: #999999 !important;
+  --el-color-primary: #0657C9 !important;
+  --el-color-primary-light-3: #1F68CF !important;
+  --el-color-primary-light-5: #3879D4 !important;
+  --el-color-primary-light-8: #518ADA !important;
   --el-color-primary-light-9: #efefef !important;
 
   --el-color-primary-dark-2: #555555 !important;

@@ -96,7 +96,7 @@ function toggleDropdown(event: any) {
         <span>Шикастланган</span>
       </RouterLink>
     </li>
-    
+
     <div v-for="(item, index) in menu" :key="index">
       <ul
         class="subMenu"
@@ -200,7 +200,7 @@ function toggleDropdown(event: any) {
 .menuLink:hover,
 .menuLink.active {
   color: #fff;
-  background-color: #000;
+  background-color: var(--el-color-primary);
 }
 
 .menuIcon {
@@ -286,7 +286,7 @@ function toggleDropdown(event: any) {
 
 .subMenuToggle:hover,
 .subMenu.opened .subMenuToggle {
-  background-color: #000;
+  background-color: var(--el-color-primary);
   color: #fff;
 }
 
@@ -315,7 +315,7 @@ function toggleDropdown(event: any) {
   left: 17px;
   height: calc(100% - 10px);
   width: 1px;
-  background-color: #000;
+  background-color: var(--el-color-primary);
 }
 
 .subMenuItems a {
@@ -342,18 +342,18 @@ function toggleDropdown(event: any) {
   left: 17px;
   width: 10px;
   height: 1px;
-  background-color: #000;
+  background-color: var(--el-color-primary);
 }
 
 .subMenuItems a:hover,
 .subMenuItems a.active {
-  background-color: #000;
+  background-color: var(--el-color-primary);
   color: #ffffff;
 }
 
 .subMenuItems a:hover::before,
 .subMenuItems a.active::before {
-  background-color: #000;
+  background-color: var(--el-color-primary);
 }
 
 .arrowRightIcon {
@@ -362,7 +362,7 @@ function toggleDropdown(event: any) {
   flex: 0 0 14px;
   -webkit-mask: url('/src/assets/icons/top.svg') no-repeat center/100%;
   -mask: url('/src/assets/icons/top.svg') no-repeat center/100%;
-  background-color: #000;
+  background-color: var(--el-color-primary);
   margin-left: auto;
   transform: rotate(90deg);
   transition: all 0.2s linear;
@@ -457,7 +457,7 @@ body.sideBarClose .subMenuToolTip li:last-child a {
 
 body.sideBarClose .subMenuToolTip li a:hover,
 body.sideBarClose .subMenuToolTip li a.active {
-  background-color: #000;
+  background-color: var(--el-color-primary);
   color: #ffffff;
 }
 </style>
