@@ -110,9 +110,9 @@ declare global {
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useLink: typeof import('vue-router')['useLink']
-  const useLoginStore: (typeof import('./stores/modules/login'))['useLoginStore']
-  const useLoginStoreWithOut: (typeof import('./stores/modules/login'))['useLoginStoreWithOut']
-  const useManualUsersStore: typeof import('./stores/modules/users/manual')['useManualUsersStore']
+  const useLoginStore: typeof import('./stores/modules/login')['useLoginStore']
+  const useLoginStoreWithOut: typeof import('./stores/modules/login')['useLoginStoreWithOut']
+  const useManualUsersStore: typeof import('./stores/modules/login')['useManualUsersStore']
   const useManualUsersStoreWithOut: typeof import('./stores/modules/users/manual')['useManualUsersStoreWithOut']
   const useMgmReportsStore: typeof import('./stores/modules/reports/mgm')['useMgmReportsStore']
   const useMgmReportsStoreWithout: typeof import('./stores/modules/reports/mgm')['useMgmReportsStoreWithout']
@@ -154,6 +154,7 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -203,10 +204,8 @@ declare module 'vue' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
-    readonly useManualUsersStore: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStore']>
-    readonly useManualUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStoreWithOut']>
-    readonly useMyIdUsersStore: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStore']>
-    readonly useMyIdUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStoreWithOut']>
+    readonly useLoginStore: UnwrapRef<typeof import('./stores/modules/login')['useLoginStore']>
+    readonly useLoginStoreWithOut: UnwrapRef<typeof import('./stores/modules/login')['useLoginStoreWithOut']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
@@ -220,6 +219,7 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -269,10 +269,8 @@ declare module '@vue/runtime-core' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
-    readonly useManualUsersStore: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStore']>
-    readonly useManualUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/manual')['useManualUsersStoreWithOut']>
-    readonly useMyIdUsersStore: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStore']>
-    readonly useMyIdUsersStoreWithOut: UnwrapRef<typeof import('./stores/modules/users/myid')['useMyIdUsersStoreWithOut']>
+    readonly useLoginStore: UnwrapRef<typeof import('./stores/modules/login')['useLoginStore']>
+    readonly useLoginStoreWithOut: UnwrapRef<typeof import('./stores/modules/login')['useLoginStoreWithOut']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 import { useCheckToken } from '~/utils/checkToken'
 
-export const baseURL = '__BASE_URL__' //'__BASE_URL__'
+export const baseURL = 'https://vitana.pythonanywhere.com/api/' //'__BASE_URL__'
 
 export const http = axios.create({
   baseURL: baseURL

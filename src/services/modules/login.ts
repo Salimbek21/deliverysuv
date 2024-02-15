@@ -2,7 +2,7 @@ import { httpPost } from '~/services'
 
 export function apiLogin(data: any): Promise<any> {
   return httpPost({
-    url: '/core/login/',
+    url: 'auth/login/',
     data: data
   })
 }

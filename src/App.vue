@@ -1,20 +1,23 @@
 <script setup lang="ts">
-// const router = useRouter()
-// onBeforeMount(async () => {
-//   const accessToken = localStorage.getItem('accessToken')
-//
-//   if (!accessToken) {
-//     await router.push('/login')
-//   }
-// })
+const router = useRouter()
+onBeforeMount(async () => {
+  const accessToken = localStorage.getItem('accessToken')
+
+  if (!accessToken) {
+    await router.push('/login')
+  }
+})
 </script>
 
 <template>
-  <div class="wrapper">
+  <div v-if="router.currentRoute.value.path !== '/login'" class="wrapper">
     <TheSidebar />
     <div class="content">
       <RouterView />
     </div>
+  </div>
+  <div v-else>
+    <RouterView />
   </div>
 </template>
 

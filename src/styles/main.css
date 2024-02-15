@@ -138,9 +138,10 @@ input:-webkit-autofill:active {
   border-radius: 8px !important;
   font-size: 16px !important;
   background-color: #fff !important;
-  border: 1px solid !important;
-  border-color: var(--el-color-primary) !important;
+  border: 1px solid #000 !important;
+  color: #000 !important;
 }
+
 
 .oq-message-warning-box .el-message-box__btns .el-button--primary {
   background-color: var(--el-color-danger) !important;

@@ -1,6 +1,5 @@
 import { lang } from 'moment';
 <script setup lang="ts">
-import { computed } from 'vue'
 const tableData = [
   {
     date: '2016-05-03',

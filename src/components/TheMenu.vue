@@ -28,72 +28,7 @@ function toggleDropdown(event: any) {
         items-center
       >
         <i class="menuIcon iconDashboard"></i>
-        <span>Дэшборд</span>
-      </RouterLink>
-    </li>
-    <li class="menuItem">
-      <RouterLink
-        class="menuLink"
-        :class="router.currentRoute.value.path == '/customers' ? 'active' : null"
-        to="/customers"
-        w-full
-        flex
-        items-center
-      >
-        <i class="menuIcon iconReports"></i>
-        <span>Мижозлар</span>
-      </RouterLink>
-    </li>
-    <li class="menuItem">
-      <RouterLink
-        class="menuLink"
-        :class="router.currentRoute.value.path == '/products' ? 'active' : null"
-        to="/"
-        w-full
-        flex
-        items-center
-      >
-        <i class="menuIcon iconStaffs"></i>
-        <span>Махсулотлар</span>
-      </RouterLink>
-    </li>
-    <li class="menuItem">
-      <RouterLink
-        class="menuLink"
-        :class="router.currentRoute.value.path == '/orders' ? 'active' : null"
-        to="/"
-        w-full
-        flex
-        items-center
-      >
-        <i class="menuIcon iconDashboard"></i>
-        <span>Буюртмалар</span>
-      </RouterLink>
-    </li>
-    <li class="menuItem">
-      <RouterLink
-        class="menuLink"
-        :class="router.currentRoute.value.path == '/managers' ? 'active' : null"
-        to="/"
-        w-full
-        flex
-        items-center
-      >
-        <i class="menuIcon iconDashboard"></i>
-        <span>Менежерлар</span>
-      </RouterLink>
-    </li>
-    <li class="menuItem">
-      <RouterLink
-        class="menuLink"
-        :class="router.currentRoute.value.path == '/damaged' ? 'active' : null"
-        to="/"
-        w-full
-        flex
-        items-center
-      >
-        <i class="menuIcon iconDashboard"></i>
-        <span>Шикастланган</span>
+        <span>Мониторинг</span>
       </RouterLink>
     </li>
 
@@ -362,7 +297,7 @@ function toggleDropdown(event: any) {
   flex: 0 0 14px;
   -webkit-mask: url('/src/assets/icons/top.svg') no-repeat center/100%;
   -mask: url('/src/assets/icons/top.svg') no-repeat center/100%;
-  background-color: var(--el-color-primary);
+  background-color: #000;
   margin-left: auto;
   transform: rotate(90deg);
   transition: all 0.2s linear;
