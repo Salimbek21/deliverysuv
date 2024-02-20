@@ -40,7 +40,7 @@ function toggleDropdown(event: any) {
         flex
         items-center
       >
-        <i class="menuIcon iconReports"></i>
+        <i class="menuIcon iconStaffs"></i>
         <span>Мижозлар</span>
       </RouterLink>
     </li>
@@ -53,7 +53,7 @@ function toggleDropdown(event: any) {
         flex
         items-center
       >
-        <i class="menuIcon iconStaffs"></i>
+        <i class="menuIcon iconReports"></i>
         <span>Махсулотлар</span>
       </RouterLink>
     </li>

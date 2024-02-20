@@ -149,7 +149,7 @@ const handleCurrentChange = (newPage: number) => {
 
 .el-pager li.is-active,
 .el-pager li:hover {
-  background-color: #000;
+  background-color: #000000;
   border: 1px solid #000;
   color: #fff;
 }
@@ -176,7 +176,7 @@ const handleCurrentChange = (newPage: number) => {
 }
 
 .el-pagination button:hover {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .el-pagination button:hover .el-icon {
