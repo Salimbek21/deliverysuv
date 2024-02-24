@@ -200,7 +200,7 @@ function toggleDropdown(event: any) {
 .menuLink:hover,
 .menuLink.active {
   color: #fff;
-  background-color: #000;
+  background-color: #0657c9;
 }
 
 .menuIcon {
